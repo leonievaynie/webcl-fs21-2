@@ -11,6 +11,7 @@ const fortunes = [
 function fortuneService(whenDone) {
     setTimeout(
         () => whenDone(fortunes[Math.floor((Math.random() * fortunes.length))]),
+        //Die Math.floor() Funktion gibt den größten Integer zurück, der kleiner oder gleich der gegeben Nummer ist. (Abrunden)
         Math.floor((Math.random() * 3000))
     );
 }

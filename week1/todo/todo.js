@@ -1,8 +1,7 @@
 // requires ../observable/observable.js
 // requires ./fortuneService.js
 // requires ../dataflow/dataflow.js
-
-const TodoController = () => {
+const TodoController = () => { //Constructor function, Pascal notation: OneTwoThreeFour, Camel Notation: oneTwoThree
 
     const Todo = () => {                                // facade
         const textAttr = Observable("text");            // we current don't expose it as we don't use it elsewhere

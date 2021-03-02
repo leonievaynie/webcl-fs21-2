@@ -21,7 +21,8 @@ const Observable = value => {
 const ObservableList = list => {
     const addListeners = [];
     const delListeners = [];
-    const removeAt     = array => index => array.splice(index, 1);
+    const removeAt     = array => index => array.splice(index, 1); //The slice() method returns the selected elements in an array, as a new array object.
+    //The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
     const removeItem   = array => item  => { const i = array.indexOf(item); if (i>=0) removeAt(array)(i); };
     const listRemoveItem     = removeItem(list);
     const delListenersRemove = removeAt(delListeners);
